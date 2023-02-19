@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:opsz,wght@8..144,400;8..144,500;8..144,600;8..144,700;8..144,800&display=swap');
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  font-family: 'Roboto Serif', serif;
+  background: #000316;
+  overflow-x: hidden;
+  min-height: 100%;
+}
+
+nav .navbar {
+  background: transparent;
+}
+
+#main .search-input {
+  min-height: 350px;
+  min-width: 350px;
+}
+
+#main .container #searchCity {
+  background-color: #1E202B;
+  color: white;
+}
+
+#main .container #searchCity::placeholder {
+  color: #757575;
+}
+
+
+.card {
+  background-image: url(../imgs/snow.gif);
+  background-repeat: no-repeat;
+  height: 100%;
+  background-size: cover;
+}
+
+
+.day {
+  margin-top: 10px;
+  font-size: 20px;
+}
+
+.city {
+  font-size: 35px;
+}
+
+.status {
+  font-size: 20px;
+  color: #009ad8;
+}
+
+.weather-icon img {
+  width: 75px;
+}
+
+.degree {
+  font-weight: 900;
+  font-size: 80px;
+}
+
+.degree-max {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.degree-min {
+  font-size: 30px;
+}
+
+
+.info-icons {
+  margin-top: 30px;
+}
+
+.info-icons span i {
+  color: white;
+  font-size: 15px;
+  padding: 0px 20px;
+}
+
+
+/* svg */
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: #015871;
+  z-index: -1;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg) repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -.125s infinite, swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
+/*End Svg */
