@@ -8,7 +8,7 @@ let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "S
 
 // Weather API //
 async function getWeather(city) {
-  let weatherApi = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=7d77b96c972b4d119a3151101212704&q=${city}&days=3`);
+  let weatherApi = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=6aa2383657ba403a839125114231602&q=${city}&days=3`);
   apiStorage = await weatherApi.json();
   displayToday();
   displayNextDay();
